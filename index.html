@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>factorial numper</h1>
+    <input type="text" id="hed">
+    <button onclick="send()"> send</button>
+    <script>
+        function send(){
+          var a= document.getElementById("hed")
+          var c=Number(a.value);
+           fact=c;
+           no=c-1;
+          for(let i=1; i<c; i++){
+            fact=fact*no;
+            no--;
+
+            
+            console.log(no)
+
+          }
+          alert(fact)
+
+        }
+    </script>
+    
+</body>
+</html>
